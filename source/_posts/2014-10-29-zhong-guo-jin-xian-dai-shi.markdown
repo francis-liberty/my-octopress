@@ -3,7 +3,7 @@ layout: post
 title: "中国近代史"
 date: 2014-10-29 09:23:46 +0800
 comments: true
-categories: 史
+categories: 史 not-programmer
 ---
 
 读毕[追寻现代中国(史景遷)](http://book.douban.com/subject/1283178/), [萬曆十五年(黃仁宇)](http://book.douban.com/subject/1041482/), [中国歷代政治得失(錢穆)](http://book.douban.com/subject/1003479/), 最近又在读[中國近代史/The Rise of Modern China(徐中約)](http://book.douban.com/subject/2376486/)。
