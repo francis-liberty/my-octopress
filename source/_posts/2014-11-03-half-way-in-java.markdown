@@ -33,9 +33,52 @@ It costs me hours to come up that Java class uses full path name to refer to a m
 	}
 ```
 
+* ListArray<String> to String[]
+``` java
+    List<String> list =new ArrayList<String>();
+    //add some stuff
+    list.add("android");
+    list.add("apple");
+    String[] stringArray = list.toArray(new String[list.size()]);
+```
+
 ## Array Manipulation
 * like Python [n:]
 ``` java
-  import java.utils.Arrays
+    import java.utils.Arrays
 	Arrays.copyOfRange(arr, n, arr.length);
+```
+
+* convert from arraylist to array
+``` java
+    ArrayList<Integer> arrlist = new ArrayList<Integer>();
+    // use add() method to add values in the list
+
+    Integer list2[] = new Integer[arrlist.size()];
+    list2 = arrlist.toArray(list2);
+```
+
+* sort
+``` java
+    import java.util.Collections;
+    Collections.sort(arrList);
+```
+
+## Map Manipulation
+
+* iterate
+``` java
+    for (Integer k: m.keySet())
+```
+
+## File Manipulation
+
+* read a file line by line
+``` java
+    BufferedReader br = new BufferedReader(new FileReader(file));
+    String line;
+    while ((line = br.readLine()) != null) {
+       // process the line.
+    }
+br.close();
 ```

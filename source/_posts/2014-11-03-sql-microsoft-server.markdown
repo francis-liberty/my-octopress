@@ -32,7 +32,7 @@ It happens that I need to work with Microsoft SQL server, then problem comes ...
 <!-- more -->
 
 * move Table from one datebase to another
-```
+``` sql
 	SELECT * 
 	INTO DestinationDB..MyDestinationTable 
 	FROM SourceDB..MySourceTable 
@@ -47,23 +47,35 @@ It happens that I need to work with Microsoft SQL server, then problem comes ...
 ```
 
 * substring
-```
+``` sql
 	SELECT LastName, SUBSTRING(FirstName, 1, 1) AS Initial
 	FROM Person.Person
 	WHERE LastName like 'Barl%'
 	ORDER BY LastName;
 ```
 * convert
-```
+``` sql
 	CONVERT(data_type(length),expression,style)
 ```
 
 * insert from one table to another
-```
+``` sql
 	INSERT INTO table2
 	(column_name(s))
 	SELECT column_name(s)
 	FROM table1;
+```
+
+* extract date from datetime
+``` sql
+	DATEPART(DATOFYEAR, field)
+```
+
+* compare date
+``` sql
+	SELECT *
+	FROM STUDENTS
+	WHERE BIRTHDAY > '1992-07-01'  -- born later than that
 ```
 
 
